@@ -27,3 +27,11 @@ override.tf.json
 
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
+# Ignore the .idea folder which created by jetbrains IDE's
+.idea
+.dccache
+
+# Igmore the local backend configuration file
+*.conf
+# Ignore the local env variable file
+*.tfvars
