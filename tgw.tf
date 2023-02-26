@@ -19,6 +19,9 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "inspection_vpc" {
   transit_gateway_default_route_table_propagation = false
   transit_gateway_id                              = aws_ec2_transit_gateway.tgw.id
   vpc_id                                          = module.inspection_vpc.vpc_id
+  tags = {
+    Name = "inspection_vpc"
+  }
 }
 
 #TGW App VPC attachment
@@ -31,6 +34,9 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "app_vpc" {
   transit_gateway_default_route_table_propagation = false
   transit_gateway_id                              = aws_ec2_transit_gateway.tgw.id
   vpc_id                                          = module.app_vpc.vpc_id
+  tags = {
+    Name = "app_vpc"
+  }
 }
 
 #TGW Egress VPC attachment
@@ -43,6 +49,9 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "egress_vpc" {
   transit_gateway_default_route_table_propagation = false
   transit_gateway_id                              = aws_ec2_transit_gateway.tgw.id
   vpc_id                                          = module.egress_vpc.vpc_id
+  tags = {
+    Name = "egress_vpc"
+  }
 }
 
 #TGW Route Tables

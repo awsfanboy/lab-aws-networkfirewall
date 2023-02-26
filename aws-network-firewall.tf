@@ -19,7 +19,7 @@ resource "aws_networkfirewall_rule_group" "default_rule_group" {
         stateless_rule {
           priority = 10
           rule_definition {
-            actions = ["aws:pass"]
+            actions = ["aws:forward_to_sfe"]
             match_attributes {
               source {
                 address_definition = var.egress_vpc_cidr
