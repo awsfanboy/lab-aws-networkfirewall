@@ -43,9 +43,9 @@ resource "aws_networkfirewall_rule_group" "block_google" {
   rule_group {
     rule_variables {
       ip_sets {
-        key = "HOME_NET"
+        key = "APP_VPC"
         ip_set {
-          definition = [module.app_vpc.vpc_cidr_block, module.egress_vpc.vpc_cidr_block]
+          definition = [module.app_vpc.vpc_cidr_block]
         }
       }
     }

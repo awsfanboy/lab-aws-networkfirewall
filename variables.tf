@@ -35,16 +35,6 @@ variable "env" {
   default     = ""
 }
 
-variable "public_subnet_a" {
-  type    = string
-  default = ""
-}
-
-variable "public_subnet_b" {
-  type    = string
-  default = ""
-
-}
 
 #Inspection VCP
 variable "inspection_vpc_cidr" {
