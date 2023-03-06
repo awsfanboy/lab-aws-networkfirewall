@@ -10,7 +10,7 @@ This repo is used to deploy and test the LAB described in my dev.to blog post.Le
 
 Here is the dev.to link to my blog post how to test this lab.
 
-[dev.to Blog](https://github.com/matiassingers/awesome-readme)
+[dev.to Blog](https://dev.to/aws-builders/lets-play-with-aws-network-firewall-hands-on-lab-2ha4)
 
 
 ## Want to contribute?
